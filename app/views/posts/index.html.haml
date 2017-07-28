@@ -3,4 +3,8 @@
   %h2= link_to post.title, post
   %p= post.comments.count
   Comments 
+  %p= post.get_likes.count 
+  Likes 
+  %br 
+  
 = link_to "Add an Inspiration", new_post_path
