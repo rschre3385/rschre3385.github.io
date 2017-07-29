@@ -38,8 +38,11 @@ class PostsController < ApplicationController
 	end 
 
 	def destroy 
-	  @post.destroy 
-	  redirect_to root_path 
+      @post.destroy
+      respond_to do |format|
+        format.html { redirect_to posts_url, notice: 'Link was successfully destroyed.' }
+        format.json { head :no_content }
+      end
 	end 
 
 	def upvote
