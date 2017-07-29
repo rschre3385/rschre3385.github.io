@@ -2,6 +2,9 @@
  *= require_self
  */
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 body {
 	font-family: "Proxima Nova";
 	font-weight: 100;
@@ -41,6 +44,7 @@ header {
 	#logo {
 		float: left;
 		font-size: 1.75rem;
+		font-family: 'Pacifico', cursive;
 		a {
 			color: #333233;
 			text-decoration: none;
