@@ -34,6 +34,7 @@ gem 'simple_form'
 gem 'devise'
 gem 'carrierwave', '~> 1.0'
 gem 'acts_as_votable', '~> 0.10.0'
+gem 'will_paginate'
 
 group :development, :test do
   # Call 'bgem 'simple_form'yebug' anywhere in the code to stop execution and get a debugger console
